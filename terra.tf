@@ -1,0 +1,10 @@
+resource "aws_instance" "web" {
+     ami = "ami-0629230e074c580f2"
+     instance_type = "t2.micro"
+     availability_zone = "us-east-2b"
+	 key_name ="jenkins"
+	 subnet_id = "subnet-09521af8c6cfe39fb"
+	tags ={
+	name = "Jenkins"
+	}
+ }
